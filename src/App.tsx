@@ -12,6 +12,8 @@ function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
+  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
+  const [showExplanation, setShowExplanation] = useState(false);
 
   const currentQuestion = questions[currentIndex];
   const TIMER_DURATION = 10;
@@ -23,18 +25,26 @@ function App() {
     },
   });
 
-  function handleAnswer(selected: string) {
-    const isCorrect = selected === currentQuestion.correctAnswer;
-    if (isCorrect) setScore((prev) => prev + 1);
+ function handleAnswer(selected: string) {
+   setSelectedAnswer(selected);
+   setShowExplanation(true);
 
-    const nextIndex = currentIndex + 1;
-    if (nextIndex < questions.length) {
-      setCurrentIndex(nextIndex);
-      resetTimer();
-    } else {
-      setShowResult(true);
-    }
-  }
+   const isCorrect = selected === currentQuestion.correctAnswer;
+   if (isCorrect) setScore((prev) => prev + 1);
+
+   setTimeout(() => {
+     const nextIndex = currentIndex + 1;
+     if (nextIndex < questions.length) {
+       setCurrentIndex(nextIndex);
+       setSelectedAnswer(null);
+       setShowExplanation(false);
+       resetTimer();
+     } else {
+       setShowResult(true);
+     }
+   }, 3000); // show explanation for 3 seconds
+ }
+
 
   function handleRetry() {
     setCurrentIndex(0);
@@ -48,7 +58,7 @@ function App() {
   }, [currentIndex]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-100 via-white to-blue-100 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br flex items-center justify-center p-4">
       <div className="w-full max-w-3xl bg-white shadow-2xl rounded-3xl p-8 sm:p-10 space-y-8">
         <header className="text-center">
           <h1 className="text-3xl sm:text-4xl font-bold text-indigo-700">
@@ -66,7 +76,12 @@ function App() {
         {!showResult ? (
           <>
             <TimerBar timeLeft={timeLeft} totalTime={TIMER_DURATION} />
-            <QuestionCard question={currentQuestion} onAnswer={handleAnswer} />
+            <QuestionCard
+              question={currentQuestion}
+              onAnswer={handleAnswer}
+              selectedAnswer={selectedAnswer}
+              showExplanation={showExplanation}
+            />
           </>
         ) : (
           <ResultCard

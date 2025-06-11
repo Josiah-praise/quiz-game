@@ -8,7 +8,8 @@
             "Mercury",
             "Venus"
         ],
-        "correctAnswer": "Mercury"
+        "correctAnswer": "Mercury",
+        "explanation": "Mercury is the closest planet to the Sun, orbiting at about 58 million kilometers away."
     },
     {
         "id": 2,
@@ -19,7 +20,8 @@
             "Beijing",
             "Bangkok"
         ],
-        "correctAnswer": "Tokyo"
+        "correctAnswer": "Tokyo",
+        "explanation": "Tokyo is the capital city of Japan and one of the most populous cities in the world."
     },
     {
         "id": 3,
@@ -30,7 +32,8 @@
             "CO2",
             "NaCl"
         ],
-        "correctAnswer": "H2O"
+        "correctAnswer": "H2O",
+        "explanation": "H2O stands for two hydrogen atoms and one oxygen atom, the chemical composition of water."
     },
     {
         "id": 4,
@@ -41,7 +44,8 @@
             "William Shakespeare",
             "Jane Austen"
         ],
-        "correctAnswer": "William Shakespeare"
+        "correctAnswer": "William Shakespeare",
+        "explanation": "'Romeo and Juliet' is a famous tragedy written by William Shakespeare in the late 1500s."
     },
     {
         "id": 5,
@@ -52,7 +56,8 @@
             "Giraffe",
             "Great White Shark"
         ],
-        "correctAnswer": "Blue Whale"
+        "correctAnswer": "Blue Whale",
+        "explanation": "The blue whale is the largest mammal ever known to have existed, reaching lengths over 90 feet."
     },
     {
         "id": 6,
@@ -63,7 +68,8 @@
             "USA",
             "Greece"
         ],
-        "correctAnswer": "Italy"
+        "correctAnswer": "Italy",
+        "explanation": "Modern pizza originated in Naples, Italy, in the 18th or early 19th century."
     },
     {
         "id": 7,
@@ -74,7 +80,8 @@
             "-32°C",
             "32°C"
         ],
-        "correctAnswer": "0°C"
+        "correctAnswer": "0°C",
+        "explanation": "Water freezes at 0 degrees Celsius under standard atmospheric conditions."
     },
     {
         "id": 8,
@@ -85,7 +92,8 @@
             "7",
             "8"
         ],
-        "correctAnswer": "7"
+        "correctAnswer": "7",
+        "explanation": "Earth has 7 continents: Asia, Africa, North America, South America, Antarctica, Europe, and Australia."
     },
     {
         "id": 9,
@@ -96,7 +104,8 @@
             "French",
             "English"
         ],
-        "correctAnswer": "Portuguese"
+        "correctAnswer": "Portuguese",
+        "explanation": "Brazil was colonized by Portugal, which is why Portuguese is its official language."
     },
     {
         "id": 10,
@@ -107,6 +116,7 @@
             "Carbon Dioxide",
             "Nitrogen"
         ],
-        "correctAnswer": "Carbon Dioxide"
+        "correctAnswer": "Carbon Dioxide",
+        "explanation": "Plants absorb carbon dioxide during photosynthesis to produce oxygen and glucose."
     }
 ]
