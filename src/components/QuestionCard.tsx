@@ -1,3 +1,5 @@
+import { type Question } from "../types";
+
 export default function QuestionCard({
   question,
   onAnswer,
