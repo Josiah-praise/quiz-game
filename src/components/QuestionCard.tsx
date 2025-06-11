@@ -10,7 +10,7 @@ export default function QuestionCard({
   return (
     <div className="space-y-6">
       {/* Question */}
-      <h2 className="text-2xl font-semibold text-gray-80">
+      <h2 className="text-2xl font-semibold text-gray-800">
         {question.question}
       </h2>
 
