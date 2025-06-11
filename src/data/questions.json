@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "question": "Which planet is closest to the sun?",
+        "options": [
+            "Earth",
+            "Mars",
+            "Mercury",
+            "Venus"
+        ],
+        "correctAnswer": "Mercury"
+    },
+    {
+        "id": 2,
+        "question": "What is the capital of Japan?",
+        "options": [
+            "Seoul",
+            "Tokyo",
+            "Beijing",
+            "Bangkok"
+        ],
+        "correctAnswer": "Tokyo"
+    }
+]
